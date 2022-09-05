@@ -25,6 +25,8 @@ function PlantPage() {
     return plant.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
+  console.log(displayedPlants)
+
   return (
     <main>
       <NewPlantForm onAddPlant={handleAddPlant} />

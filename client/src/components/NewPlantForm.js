@@ -5,6 +5,8 @@ function NewPlantForm({ onAddPlant }) {
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
 
+  console.log(price)
+
   function handleSubmit(e) {
     e.preventDefault();
     fetch("/plants", {
